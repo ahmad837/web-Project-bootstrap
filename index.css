@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  height: auto;
+}
+
+header {
+  position: relative;
+  width: 100%;
+}
+header nav{
+  border-bottom: black;
+  align-items: center;
+}
+header .brand {
+  position: relative;
+  color: #ffcc00;
+  font-size: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 1px;
+  animation: fadeIn ease 1s;
+  cursor: context-menu;
+}
+
+header .navigation li{
+  list-style-type: none;
+}
+
+header .navigation a:hover {
+  background-color: white;
+  color: #ffcc00 !important;
+  
+}
+.navbar-nav li{
+  margin-left:15px;
+  margin-right:15px;
+}
+.container{
+  display: flex;
+  justify-content: center;
+}
+.content {
+  cursor: context-menu;
+  width: auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+  z-index: 9999;
+}
+
+.content .info #tag {
+  color: #ffcc00;
+  font-size: 2.8125em;
+}
+.content.info #wel {
+  color: black;
+}
+.content .info span {
+  color: #ffcc00;
+  /* font-weight: 600; */
+}
+.content .info p {
+  font-size: 1em;
+  font-weight: 500;
+  margin-bottom: 40px;
+  animation: fadeIn ease 1s;
+}
+
+
+.m-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  animation: fadeIn ease 1s;
+}
+.m-icons a {
+  position: relative;
+  color: white;
+  font-size: 25px;
+  transition: 0.3s;
+  transition-property: transform;
+}
+.m-icons a:not(:last-child) {
+  margin-right: 60px;
+}
+.m-icons a:hover {
+  transform: scale(1.5);
+  color: white !important;
+}
+
+.logo {
+  animation: fadeIn ease 2s;
+  width: 26.343519494204426vh;
+  height: 26.343519494204426vh;
+  cursor: pointer;
+  transition: 0.3s;
+  transition-property: width, height;
+}
+.logo:hover{
+  width: 29.343519494204426vh;
+  height: 29.343519494204426vh;
+}
+#logo_description {
+  color: orange;
+  visibility: none;
+  opacity: 0;
+  transition: opacity .2s, visibility .2s;
+}
+ .logo:hover + #logo_description {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+#footer {
+  padding: 20px;
+  margin-top: auto;
+  background-color: black;
+}
+
+.image-container img {
+  height: 300px;
+  width: 450px;
+  padding: 1px;
+}
+
+
+
+@media only screen and (max-width: 600px){
+  #p-body {
+      margin-left: unset;
+  }
+}
